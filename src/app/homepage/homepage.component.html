@@ -1,0 +1,93 @@
+<div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+  <!-- Title -->
+  <div class="max-w-3xl text-center mx-auto">
+    <h1
+      class="block font-medium text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+    >
+      Now it's easier than ever to build products
+    </h1>
+  </div>
+  <!-- End Title -->
+
+  <div class="max-w-3xl text-center mx-auto">
+    <p class="text-lg text-gray-400">
+      Preline is a large open-source project, crafted with Tailwind CSS
+      framework by Hmlstream.
+    </p>
+  </div>
+
+  <!-- Buttons -->
+
+  @if(!user){
+  <div class="text-center">
+    <a
+      class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
+      routerLink="/register"
+    >
+      Get started
+      <i class="pi pi-angle-right"></i>
+    </a>
+  </div>
+  } @else {
+  <div class="text-center">
+    <a
+      class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
+      routerLink="/products"
+    >
+      Welcome
+      <i class="pi pi-angle-right"></i>
+    </a>
+  </div>
+  }
+
+  <!-- End Buttons -->
+</div>
+
+<!-- Features -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <!-- Grid -->
+  <div class="mt-20 flex justify-evenly">
+    <!-- Stats -->
+    <div>
+      <h4
+        class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200"
+      >
+        Accuracy rate
+      </h4>
+      <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">
+        99.95%
+      </p>
+      <p class="mt-1 text-gray-500">in fulfilling orders</p>
+    </div>
+    <!-- End Stats -->
+
+    <!-- Stats -->
+    <div>
+      <h4
+        class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200"
+      >
+        Startup businesses
+      </h4>
+      <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">
+        2,000+
+      </p>
+      <p class="mt-1 text-gray-500">partner with Preline</p>
+    </div>
+    <!-- End Stats -->
+
+    <!-- Stats -->
+    <div>
+      <h4
+        class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200"
+      >
+        Happy customer
+      </h4>
+      <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">
+        85%
+      </p>
+      <p class="mt-1 text-gray-500">this year alone</p>
+    </div>
+    <!-- End Stats -->
+  </div>
+  <!-- End Grid -->
+</div>
